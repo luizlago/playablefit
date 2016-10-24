@@ -6,10 +6,6 @@ body {
   margin: 0;
 }
 
-#container {
-  text-align: center;
-}
-
 .clearfix {
   clear: both;
 }
@@ -26,26 +22,39 @@ body {
   padding: 10px;
   text-align: left;
 }
-
-#photo-container {
-  background-color: #EEE;
-  border: 1px solid #CCC;
-  float: left;
-  height: 80px;
+md-toolbar #user-logged:hover{
+  cursor: pointer;
+  outline: none;
+}
+md-toolbar #user-logged{
+  outline: none;
+  margin-right: 20px;
+}
+md-toolbar #user-logged .avatar-size{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   margin-right: 10px;
-  width: 80px;
 }
 
-#photo {
-  height: 80px;
-  margin: 0;
-  width: 80px;
+md-toolbar #user-logged .text-size{
+  font-size: 15px;
+  padding-top: 7px;
+}
+md-toolbar #user-logged .level-size{
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid #fff;
+  border-radius: 5%;
+  text-align: right;
 }
 
-@media (max-width: 300px) {
-  #photo-container,
-  #photo {
-    height: 40px;
-    width: 40px;
-  }
+.md-open-menu-container.md-whiteframe-z2.md-default-theme.md-active{
+  margin-top:56px;
+  margin-left: 10px; 
+}
+
+body, md-content {
+   background-color: #f9f9f9;
 }
